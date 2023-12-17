@@ -1,3 +1,5 @@
+<div style="font-weight: 200">
+
 # Kun-Chieh (KC) Hsu <span style="vertical-align: middle;">[![](assets/github.png)](https://github.com/sieginglion/)</span> <span style="vertical-align: middle;">[![](assets/linkedin.png)](https://www.linkedin.com/in/sieginglion/)</span>
 
 ## Experience
@@ -8,19 +10,19 @@
 
 ## Tasks and Skills in aetherAI
 
-\*All production deployments (except k8s image pulling) were done **offline**.
+\*All prod deployments (except k8s image pulling) were done **offline**.
 
-- Environment Parity: Create a unified process for developers to bring up their own dev envs and for field application engineers (FAEs) to deploy varios prod envs, compatible with both **Docker Compose** and **Helm**.
+- **Environment Parity**: Design a unified process for developers to bring up their own dev envs independently and for field application engineers (FAEs) to deploy varios prod envs efficiently. It's compatible with both **Docker Compose** and **Helm**.
 
-- Kubernetes: Help the company migrate from docker to k8s. Incorporate various open sourced solutions to the product: Helm, MicroK8s, Longhorn, MetalLB, Patroni (Zalando’s cloud native Postgres), SMB driver, Elastic stack.
+- **Kubernetes**: Migrate the major product from **Docker** to K8s. Incorporate a range of open-source solutions into it, including **Helm**, **MicroK8s**, **Longhorn** (distributed block storage), **MetalLB**, **Patroni** (**high-availability PostgreSQL**), **SMB** driver, **Elastic stack**.
 
-- CI/CD: Maintain all the Dockerfiles. Introduce Earthly. Maintain all the GitLab CI pipelines, on-premises GitLab Runner, on-premises container registry (Harbor). Introduce ArgoCD for staging env.
+- **CI/CD**: Maintain all **Dockerfile**s, **GitLab CI** pipelines, **on-premises GitLab Runner**, **on-premises container registry** (**Harbor**). Incorporate **Earthly** and **ArgoCD** into it.
 
-- Monitoring: All outflow traffic except SMTP is blocked in hospitals. Responsible for designing a sidecar container utilizing Docker SDK, Kubernetes API to collect the metrics which will later be sent out as mails. In-house CI will then retrieve it, parse it, dump into Elasticsearch then for Grafana displaying. ElastAlert for slack alerting. Also use Sentry for in-hospital monitoring.
+- Monitoring: Responsible for designing an e2e monitoring solution for hospitals that only allow **SMTP** outflow. It involves a sidecar container built upon **Docker SDK** and **Kubernetes API** for data collection, with metrics sent by email. An internal CI pipeline will process and store this data in **Elasticsearch**. Data visualization will be done in **Grafana**, while **ElastAlert** will handle Slack notifications. **Sentry** will be used for on-site monitoring.
 
-- Network Topology: Maintain and design the network topology across single/dual-node, K8s version. Design how cross node communication is authed and encrypted (mTLS) and a procedure for FAEs to install the CA effortlessly.
+- Network Topology: Design a network topology suitable for single-node, dual-node, and Kubernetes architectures. which is also secure during cross node communication.Heavily rely on **Nginx**, **Caddy**, **mTLS**.
 
-- Windows Server: Make a python server HA and secure on windows (PowerShell, Caddy, mTLS) and package them into an offline package so FAEs can deploy it from Linux, utilizing ansible-playbook under the hood
+- **Windows Server**: Design a **high-availability** and secure solution for a Windows Python server with **Powershell**, **Nginx**, **Caddy**, **mTLS**. Develop **Ansible Playbook**s for FAEs to install/update/control it from Linux. Develop a CI that packages them into a single offline deployable.
 
 ## Hobby Projects
 
@@ -48,3 +50,5 @@ skills: **JavaScript**, **VS Code API**
 Fast and Concise Ray Tracer with SIMD Acceleration
 
 Skills: **C++**
+
+</div>
