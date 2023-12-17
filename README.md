@@ -1,17 +1,16 @@
-# Kun-Chieh (KC) Hsu [![](assets/github.png)](https://github.com/sieginglion/) [![](assets/linkedin.png)](https://www.linkedin.com/in/sieginglion/)
+# Kun-Chieh (KC) Hsu <span style="vertical-align: middle;">[![](assets/github.png)](https://github.com/sieginglion/)</span> <span style="vertical-align: middle;">[![](assets/linkedin.png)](https://www.linkedin.com/in/sieginglion/)</span>
 
 ## Experience
 
-- 14/9 National **Tsing Hua** University: Materials Science major, CS minor
+- 9/14 National **Tsing Hua** University: materials science major, CS minor
+- 7/17 ~ 8/19 (2.2Y) HIGH5.ai: **Full Stack**
+- 6/20 ~ 6/23 (3Y) aetherAI: **Sr. DevOps** (the only)
 
-- 17/7 ~ 19/9 (2.25Y) HIGH5.ai: **Full Stack**
-- 20/6 ~ 23/6 (3Y) aetherAI: **Sr. DevOps** (the only)
-
-## What did I do in aetherAI?
+## Tasks and Skills in aetherAI
 
 \*All production deployments (except k8s image pulling) were done **offline**.
 
-- Environment Parity: Create a unified process for developers to bring up their own dev envs and for field application engineers (FAEs) to deploy different prod envs. Should be compatible with both Docker Compose and Helm.
+- Environment Parity: Create a unified process for developers to bring up their own dev envs and for field application engineers (FAEs) to deploy varios prod envs, compatible with both **Docker Compose** and **Helm**.
 
 - Kubernetes: Help the company migrate from docker to k8s. Incorporate various open sourced solutions to the product: Helm, MicroK8s, Longhorn, MetalLB, Patroni (Zalando’s cloud native Postgres), SMB driver, Elastic stack.
 
@@ -25,18 +24,24 @@
 
 ## Hobby Projects
 
-### https://stock-sense.info
+### https://stock-sense.info/
 
-A website show income statements of US/TW public companies as animations. Also include corresponding P/E Ratio
+A website show income statements of US/TW public companies as animations. Also include corresponding P/E Ratio \
 Skills: **Python**, **Plotly**, **Plotly Dash**, **Pandas**, **SEC API**, **Docker**, **GitHub Actions**, **Azure Container Apps**, **Namecheap**, **CloudFlare**
 
-### ipttrace
+### portman
 
-A CLI let you trace iptables rules at ease, skills: **Python**, **typer**, **iptables**, **dmesg**
+My own investment portfolio management server that fetches historical prices for U.S. and Taiwan stocks, dividend-adjusted, and includes cryptocurrency data. It evaluates portfolio positions based on downside risk and optimizes MACD parameters to generate trading signals, all visualized through a Streamlit app. stock-sense.info depends on it. \
+Skills: **Numba**, **Python**, **FastAPI**, **NumPy**, **streamlit**
 
-### kwarg-sort
+### [ipttrace](https://pypi.org/project/ipttrace/)
 
-A VS Code extension that help you sort Python function kwargs alphabetically, skills: **JavaScript**, **VS Code API**
+A CLI let you trace iptables rules at ease, skills: **Python**, **typer**, **iptables**, **dmesg**, **PyPI**
+
+### [kwarg-sort](https://marketplace.visualstudio.com/items?itemName=sieginglion.kwarg-sort)
+
+If you are also an obsessive-compulsive disorder patient like me, here's a VS Code extension that help you sort Python function kwargs alphabetically \
+skills: **JavaScript**, **VS Code API**
 
 ### UltraTracer
 
