@@ -9,7 +9,7 @@
 
 ## What did I do in aetherAI?
 
-\*All production deployments (except k8s image pulling) were done offline.
+\*All production deployments (except k8s image pulling) were done **offline**.
 
 - Environment Parity: Create a unified process for developers to bring up their own dev envs and for field application engineers (FAEs) to deploy different prod envs. Should be compatible with both Docker Compose and Helm.
 
@@ -22,3 +22,24 @@
 - Network Topology: Maintain and design the network topology across single/dual-node, K8s version. Design how cross node communication is authed and encrypted (mTLS) and a procedure for FAEs to install the CA effortlessly.
 
 - Windows Server: Make a python server HA and secure on windows (PowerShell, Caddy, mTLS) and package them into an offline package so FAEs can deploy it from Linux, utilizing ansible-playbook under the hood
+
+## Hobby Projects
+
+### https://stock-sense.info
+
+A website show income statements of US/TW public companies as animations. Also include corresponding P/E Ratio
+Skills: **Python**, **Plotly**, **Plotly Dash**, **Pandas**, **SEC API**, **Docker**, **GitHub Actions**, **Azure Container Apps**, **Namecheap**, **CloudFlare**
+
+### ipttrace
+
+A CLI let you trace iptables rules at ease, skills: **Python**, **typer**, **iptables**, **dmesg**
+
+### kwarg-sort
+
+A VS Code extension that help you sort Python function kwargs alphabetically, skills: **JavaScript**, **VS Code API**
+
+### UltraTracer
+
+Fast and Concise Ray Tracer with SIMD Acceleration
+
+Skills: **C++**
