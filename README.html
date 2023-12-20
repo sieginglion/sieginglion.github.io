@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<div style="font-weight: 200">
+<h1 id="kun-chieh-kc-hsu-span-style%22vertical-align-middle%22span-span-style%22vertical-align-middle%22span">Kun-Chieh (KC) Hsu <span style="vertical-align: middle;"><a href="https://github.com/sieginglion/resume"><img src="./assets/github.png" alt=""></a></span> <span style="vertical-align: middle;"><a href="https://www.linkedin.com/in/sieginglion/"><img src="./assets/linkedin.png" alt=""></a></span></h1>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<div>
+<h2 id="experience">Experience</h2>
+<ul>
+<li>9/14 National <strong>Tsing Hua</strong> University: materials science major, CS minor</li>
+<li>7/17 ~ 8/19 (2.2Y) HIGH5.ai: <strong>Full Stack Developer</strong> <br>
+HIGH5 provided CRM solutions, including chatbots, web push notifications, and customer journey mapping, to brands and marketing companies. Our platform was capable of handling over 20,000 messages per hour. <br>
+Skills: <strong>Python</strong>, <strong>NLP</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, <strong>GCP</strong>, <strong>Elasticsearch</strong>, <strong>RabbitMQ</strong>, <strong>Docker</strong>, <strong>BitBucket Pipelines</strong>, <strong>Kubernetes</strong></li>
+<li>6/20 ~ 6/23 (3Y) aetherAI: <strong>Sr. DevOps</strong> (the only)</li>
+</ul>
+</div>
+<img src="./assets/sieginglion.jpeg" height=200></img>
+</div>
+<h2 id="tasks-and-skills-used-at-aetherai">Tasks and Skills Used at aetherAI</h2>
+<p>*The product was an AI pathology system, so all production deployments, except for Kubernetes image pulling, were conducted <strong>offline</strong>.</p>
+<ul>
+<li>
+<p><strong>Environment Parity</strong>: Designed a unified toolset for developers to bring up their own development environments independently and for field application engineers (FAEs) to deploy various production environments effortlessly. It had to be compatible with both <strong>Docker Compose</strong> and <strong>Helm</strong>, presenting a huge challenge in <strong>configuration management</strong>.</p>
+</li>
+<li>
+<p><strong>Kubernetes</strong>: Successfully migrated the product from <strong>Docker</strong> to Kubernetes by incorporating a range of open-source solutions into it. These included <strong>Helm</strong>, <strong>MicroK8s</strong>, <strong>Longhorn</strong> (distributed block storage), <strong>MetalLB</strong> (bare metal load-balancer), <strong>Patroni</strong> (<strong>high-availability PostgreSQL</strong>), <strong>SMB</strong> driver, <strong>Elastic stack</strong>. Was responsible for team training afterwards.</p>
+</li>
+<li>
+<p><strong>CI/CD</strong>: Responsible for optimizing all <strong>Dockerfile</strong>s, <strong>GitLab CI</strong> pipelines, managing <strong>on-premises GitLab Runner</strong>s and <strong>container registry</strong> (<strong>Harbor</strong>). Incorporated <strong>Earthly</strong> and <strong>ArgoCD</strong> into it. Designed a pipeline for packaging unique offline deployables for each customer, using ClickUp as the single source of truth.</p>
+</li>
+<li>
+<p>Monitoring: Designed an end-to-end monitoring solution for hospitals that only allowed <strong>SMTP</strong> outflow. This included a sidecar container built upon <strong>Docker SDK</strong> and <strong>Kubernetes API</strong> to send out the metrics as emails periodically. An internal CI pipeline processed and stored the data in <strong>Elasticsearch</strong>. Data visualization was done in <strong>Grafana</strong>, while <strong>ElastAlert</strong> handled Slack alerting. <strong>Sentry</strong> was used for on-site monitoring.</p>
+</li>
+<li>
+<p>Backend Development: Designed a network topology suitable for single-node, dual-node, and Kubernetes architectures, which was also secure during cross-node communication. Heavily relied on <strong>Nginx</strong>, <strong>Caddy</strong>, <strong>mTLS</strong>. Developed a fixed-rate load testing tool with <strong>Golang</strong>.</p>
+</li>
+<li>
+<p><strong>Windows Server</strong>: Designed a <strong>high-availability</strong> and secure solution for a Windows Python server with <strong>Powershell</strong>, <strong>Nginx</strong>, <strong>Caddy</strong>, <strong>mTLS</strong>. Developed <strong>Ansible Playbook</strong>s for FAEs to install, update, and control it from Linux.</p>
+</li>
+</ul>
+<h2 id="hobby-projects">Hobby Projects</h2>
+<h3 id="stock-senseinfo"><a href="https://stock-sense.info/">stock-sense.info</a></h3>
+<p>A website features animated income statements and P/E ratio bands for public companies in the US and Taiwan. <br>
+Skills: <strong>Python</strong>, <strong>Plotly</strong>, <strong>Plotly Dash</strong>, <strong>Pandas</strong>, <strong>SEC API</strong>, <strong>Docker</strong>, <strong>GitHub Actions</strong>, <strong>Azure Container Apps</strong>, <strong>Namecheap</strong>, <strong>CloudFlare</strong></p>
+<h3 id="portman"><a href="https://github.com/sieginglion/portman">portman</a></h3>
+<p>My own portfolio management server which is capable of fetching historical prices for US and Taiwan stocks, as well as cryptocurrencies. Based on that, it can calculate downside risk for each position and conduct MACD parameter optimization. The trading signals are presented through a Streamlit app. <br>
+Skills: <strong>Numba</strong>, <strong>Python</strong>, <strong>FastAPI</strong>, <strong>NumPy</strong>, <strong>Streamlit</strong></p>
+<h3 id="ipttrace"><a href="https://pypi.org/project/ipttrace/">ipttrace</a></h3>
+<p>A CLI let you trace iptables rules at ease <br>
+Skills: <strong>Python</strong>, <strong>typer</strong>, <strong>iptables</strong>, <strong>dmesg</strong>, <strong>PyPI</strong></p>
+<h3 id="kwarg-sort"><a href="https://marketplace.visualstudio.com/items?itemName=sieginglion.kwarg-sort">kwarg-sort</a></h3>
+<p>A VS Code extension that sorts the keyword arguments in a Python function alphabetically. <br>
+Skills: <strong>JavaScript</strong>, <strong>VS Code API</strong></p>
+<h3 id="ultratracer"><a href="https://github.com/sieginglion/UltraTracer">UltraTracer</a></h3>
+<p>Fast and Concise Ray Tracer with SIMD Acceleration <br>
+Skills: <strong>C++</strong></p>
+</div>
+
+</body>
+</html>

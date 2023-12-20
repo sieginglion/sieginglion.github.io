@@ -1,6 +1,9 @@
 <div style="font-weight: 200">
 
-# Kun-Chieh (KC) Hsu <span style="vertical-align: middle;">[![](assets/github.png)](https://github.com/sieginglion/resume)</span> <span style="vertical-align: middle;">[![](assets/linkedin.png)](https://www.linkedin.com/in/sieginglion/)</span>
+# Kun-Chieh (KC) Hsu <span style="vertical-align: middle;">[![](./assets/github.png)](https://github.com/sieginglion/resume)</span> <span style="vertical-align: middle;">[![](./assets/linkedin.png)](https://www.linkedin.com/in/sieginglion/)</span>
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<div>
 
 ## Experience
 
@@ -9,6 +12,10 @@
   HIGH5 provided CRM solutions, including chatbots, web push notifications, and customer journey mapping, to brands and marketing companies. Our platform was capable of handling over 20,000 messages per hour. \
   Skills: **Python**, **NLP**, **Angular**, **Node.js**, **GCP**, **Elasticsearch**, **RabbitMQ**, **Docker**, **BitBucket Pipelines**, **Kubernetes**
 - 6/20 ~ 6/23 (3Y) aetherAI: **Sr. DevOps** (the only)
+
+</div>
+<img src="./assets/sieginglion.jpeg" height=200></img>
+</div>
 
 ## Tasks and Skills Used at aetherAI
 
