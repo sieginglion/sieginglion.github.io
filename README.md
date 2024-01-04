@@ -5,7 +5,7 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
 <div>
 
-## Experience
+## Experience ✨
 
 - 9/14 National Tsing Hua University, Taiwan: materials science major, CS minor
 - 7/17 ~ 8/19 (**2.2Y**) HIGH5.ai: **ML and Full Stack Developer** (founding team) \
@@ -18,7 +18,7 @@
 <img src="./assets/sieginglion.jpeg" height=200></img>
 </div>
 
-## Missions in aetherAI
+## Missions in aetherAI 🎯
 
 The product was an AI pathology system, so most of the production deployments were done offline in hospitals.
 
@@ -36,28 +36,33 @@ The product was an AI pathology system, so most of the production deployments we
 
 - **Environment Parity**: Identified the problem and designed a unified toolset for developers to bring up their own development environments independently and for field application engineers (FAEs) to deploy various production environments effortlessly. It had to be compatible with both **Docker Compose** and **Helm**.
 
-- **Mentoring**: Helped mentor the FAE team on Linux, Docker, Kubernetes and Windows. Additionally, provided on-site and remote operation support.
+- **Mentoring**: Helped mentor the FAE team on Linux, Docker, Kubernetes(K9s) and Windows. Additionally, provided on-site and remote operation support.
 
-## Personal Projects
+## Personal Projects 🧑🏻‍💻
+
+### [bash-cni](https://github.com/sieginglion/bash-cni)
+
+A toy Kubernetes CNI plugin implemented in Bash. "What I cannot create, I do not understand." \
+Stack: **Linux Networking**, **Kubernetes**, **Bash**
 
 ### [ipttrace](https://pypi.org/project/ipttrace/)
 
-A CLI let you trace iptables rules at ease \
-Stack: **Python**, **typer**, **iptables**, **dmesg**, **PyPI**
+A CLI that helps you trace Iptables rules at ease \
+Stack: **iptables**, **dmesg**, **Python**, **Typer**, **PyPI**
 
 ### [kwarg-sort](https://marketplace.visualstudio.com/items?itemName=sieginglion.kwarg-sort)
 
-A VS Code extension that sorts the keyword arguments in a Python function alphabetically. \
+A VS Code extension that sorts kwargs in a selected Python function call \
 Stack: **JavaScript**, **VS Code API**
 
 ### [stock-sense.info](https://stock-sense.info/)
 
-A website features animated income statements and P/E ratio bands for public companies in the US and Taiwan. \
+A website that visualizes historical income statements as animated Sankey diagrams along with corresponding P/E ratio bands. \
 Stack: **Python**, **Plotly**, **Plotly Dash**, **Pandas**, **SEC API**, **Docker**, **GitHub Actions**, **Azure Container Apps**, **Namecheap**, **CloudFlare**
 
 ### [portman](https://github.com/sieginglion/portman)
 
-My own portfolio management server which is capable of fetching historical prices for US and Taiwan stocks, as well as cryptocurrencies. Based on that, it can calculate downside risk for each position and conduct MACD parameter optimization. The trading signals are presented through a Streamlit app. \
+My own portfolio management server which is capable of fetching historical prices for US and Taiwan stocks, as well as cryptos. Based on that, it can then calculate downside risk and conduct MACD parameter optimization for each position. The trading signals are presented through a Streamlit app. \
 Stack: **Numba**, **Python**, **FastAPI**, **NumPy**, **Streamlit**
 
 ### [My Dune Dashboard](https://dune.com/sieginglion/gmx)
@@ -67,7 +72,7 @@ Stack: **SQL**
 
 ### [UltraTracer](https://github.com/sieginglion/UltraTracer)
 
-Fast and Concise Ray Tracer with SIMD Acceleration \
+A toy ray tracer with SIMD acceleration \
 Stack: **C++**
 
 </div>

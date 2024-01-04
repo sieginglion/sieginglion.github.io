@@ -382,7 +382,7 @@ Stack: <strong>NumPy</strong>, <strong>scikit-learn</strong>, <strong>PyTorch</s
 <img src="./assets/sieginglion.jpeg" height=200></img>
 </div>
 <h2 id="missions-in-aetherai">Missions in aetherAI</h2>
-<p>The product was an AI pathology system, so most of the production deployments were done <strong>offline</strong> in <strong>hospitals</strong>.</p>
+<p>The product was an AI pathology system, so most of the production deployments were done offline in hospitals.</p>
 <ul>
 <li>
 <p><strong>Kubernetes</strong>: Migrated the product from <strong>Docker</strong> to Kubernetes by integrating a range of open-source solutions, including <strong>Helm</strong>, <strong>MicroK8s</strong>, <strong>MetalLB</strong> (bare metal load-balancer), <strong>Longhorn</strong> (distributed block storage), <strong>Patroni</strong> (<strong>high-availability PostgreSQL</strong>), <strong>SMB</strong> driver, <strong>Elastic stack</strong>.</p>
@@ -391,16 +391,16 @@ Stack: <strong>NumPy</strong>, <strong>scikit-learn</strong>, <strong>PyTorch</s
 <p><strong>AWS</strong>: Managing <strong>EC2</strong>, <strong>RDS</strong>, <strong>ELB</strong>, <strong>EFS</strong>, <strong>S3</strong> and <strong>Storage Gateway</strong> with console and <strong>Terraform</strong>. Found a solution to mount an <strong>S3 bucket</strong> as a <strong>file system</strong> with Storage Gateway.</p>
 </li>
 <li>
-<p><strong>Backend</strong>: Designed a <strong>network topology</strong> not only compatible with 3 different architectures: single-node, dual-node, and Kubernetes, but also secure for cross-node communication. <strong>Nginx</strong>, <strong>Caddy</strong> and <strong>mTLS</strong> were heavily used. Developed a load testing tool with <strong>Golang</strong>.</p>
+<p><strong>Backend</strong>: Designed a <strong>network topology</strong> not only compatible with 3 different product architectures: single node, dual node, and Kubernetes, but also secure for cross-node communication. <strong>Nginx</strong>, <strong>Caddy</strong> and <strong>mTLS</strong> were heavily used. Developed a load testing tool with <strong>Golang</strong>.</p>
 </li>
 <li>
-<p><strong>Monitoring</strong>: Designed a remote monitoring solution for hospitals that only allowed <strong>SMTP</strong> outflow traffic. This included a <strong>Python</strong> container, built upon <strong>Docker SDK</strong> and <strong>Kubernetes API</strong>, for periodically emailing metrics. An internal CI would fetch, process and store them in <strong>Elasticsearch</strong>. <strong>Grafana</strong> for visualization. <strong>ElastAlert</strong> for Slack alerting. <strong>Sentry</strong> for on-site monitoring.</p>
+<p><strong>Monitoring</strong>: Designed a remote monitoring solution for hospitals that only allowed outflow <strong>SMTP</strong> traffic. This included a <strong>Python</strong> sidecar, built upon <strong>Docker SDK</strong> and <strong>Kubernetes API</strong>, for periodically emailing metrics. An internal CI would fetch, process and store them in <strong>Elasticsearch</strong>. <strong>Grafana</strong> for visualization. <strong>ElastAlert</strong> for Slack alerting. <strong>Sentry</strong> for on-site monitoring.</p>
 </li>
 <li>
-<p><strong>CI/CD</strong>: Responsible for optimizing all <strong>Dockerfile</strong>s, <strong>GitLab CI</strong> pipelines, managing on-premises <strong>GitLab Runner</strong>s and <strong>Harbor</strong> (<strong>container registry</strong>). Integrated <strong>Earthly</strong>, <strong>Trivy</strong> and <strong>ArgoCD</strong> into the CI. Identified the problem and designed a pipeline to create unique offline deployables for each customer, using ClickUp as the single source of truth. <strong>Bash</strong> and <strong>Python</strong> were heavily used.</p>
+<p><strong>CI/CD</strong>: Responsible for optimizing all <strong>Dockerfile</strong>s and <strong>GitLab CI</strong> pipelines, managing on-premises <strong>GitLab Runner</strong>s and <strong>Harbor</strong> (<strong>container registry</strong>). Integrated <strong>Earthly</strong>, <strong>Trivy</strong> and <strong>ArgoCD</strong> into the CI. Identified the problem and designed a pipeline to create unique offline deployables for each customer, using ClickUp as the single source of truth. <strong>Bash</strong> and <strong>Python</strong> were heavily used.</p>
 </li>
 <li>
-<p><strong>Windows</strong>: Ported a Python server to Windows and designed a solution to make it <strong>highly available</strong> and secure. <strong>PowerShell</strong>, <strong>Nginx</strong>, <strong>Caddy</strong> and <strong>mTLS</strong> were heavily used. Developed a toolset based on <strong>Ansible Playbooks</strong> for FAEs to install, update, and control it from Linux.</p>
+<p><strong>Windows</strong>: Ported a Python server to Windows and designed a solution to make it <strong>highly available</strong> and secure. <strong>PowerShell</strong>, <strong>Nginx</strong>, <strong>Caddy</strong> and <strong>mTLS</strong> were heavily used. Developed a toolset based on <strong>Ansible Playbooks</strong> for FAEs to install, update and control it from Linux.</p>
 </li>
 <li>
 <p><strong>Environment Parity</strong>: Identified the problem and designed a unified toolset for developers to bring up their own development environments independently and for field application engineers (FAEs) to deploy various production environments effortlessly. It had to be compatible with both <strong>Docker Compose</strong> and <strong>Helm</strong>.</p>
@@ -422,6 +422,9 @@ Stack: <strong>Python</strong>, <strong>Plotly</strong>, <strong>Plotly Dash</st
 <h3 id="portman"><a href="https://github.com/sieginglion/portman">portman</a></h3>
 <p>My own portfolio management server which is capable of fetching historical prices for US and Taiwan stocks, as well as cryptocurrencies. Based on that, it can calculate downside risk for each position and conduct MACD parameter optimization. The trading signals are presented through a Streamlit app. <br>
 Stack: <strong>Numba</strong>, <strong>Python</strong>, <strong>FastAPI</strong>, <strong>NumPy</strong>, <strong>Streamlit</strong></p>
+<h3 id="my-dune-dashboard"><a href="https://dune.com/sieginglion/gmx">My Dune Dashboard</a></h3>
+<p>Wrote complex queries to do token distribution analysis on Dune. <br>
+Stack: <strong>SQL</strong></p>
 <h3 id="ultratracer"><a href="https://github.com/sieginglion/UltraTracer">UltraTracer</a></h3>
 <p>Fast and Concise Ray Tracer with SIMD Acceleration <br>
 Stack: <strong>C++</strong></p>
