@@ -10,7 +10,7 @@
 - 9/14 National Tsing Hua University, Taiwan: materials science major, CS minor
 - 7/17 ~ 8/19 (**2.2Y**) HIGH5.ai: **ML and Full Stack Developer** (founding team) \
   Designed a system enabling customers to retrain their own sentence classification models upon request. Later, took on the responsibility of maintaining both the frontend and backend codebases. \
-   Stack: **NumPy**, **scikit-learn**, **PyTorch**, **Optuna**, **NLP**, **NetworkX**, **aiohttp**, **Angular**, **Node.js**, **Elasticsearch**, **RabbitMQ**, **Docker**, **BitBucket Pipelines**, **Kubernetes**, **GCP**
+  Stack: **NumPy**, **scikit-learn**, **PyTorch**, **Optuna**, **NLP**, **NetworkX**, **aiohttp**, **Angular**, **Node.js**, **Elasticsearch**, **RabbitMQ**, **Docker**, **BitBucket Pipelines**, **Kubernetes**, **GCP**
 - 6/20 ~ 6/23 (**3Y**) aetherAI: **Sr. DevOps** (the only DevOps)
 - 7/23 ~ 12/23: doing projects, traveling, playing GarageBand, working out
 
@@ -22,7 +22,7 @@
 
 The product was an AI pathology system, so most of the production deployments were done offline in hospitals.
 
-- **Kubernetes**: Migrated the product from **Docker** to Kubernetes by integrating a range of open-source solutions, including **Helm**, **MicroK8s**, **MetalLB** (bare metal load-balancer), **Longhorn** (distributed block storage), **Patroni** (**high-availability PostgreSQL**), **SMB** driver, **Elastic stack**.
+- **Kubernetes**: Migrated the product from **Docker** to Kubernetes by integrating a range of open-source solutions, including **Helm**, **MicroK8s**, **MetalLB** (bare metal load-balancer), **Longhorn** (distributed block storage), **Patroni** (**highly available PostgreSQL**), **SMB CSI Driver**, **Elastic Stack**.
 
 - **AWS**: Managing **EC2**, **RDS**, **ELB**, **EFS**, **S3** and **Storage Gateway** with console and **Terraform**. Found a solution to mount an **S3 bucket** as a **file system** with Storage Gateway.
 
@@ -36,7 +36,7 @@ The product was an AI pathology system, so most of the production deployments we
 
 - **Environment Parity**: Identified the problem and designed a unified toolset for developers to bring up their own development environments independently and for field application engineers (FAEs) to deploy various production environments effortlessly. It had to be compatible with both **Docker Compose** and **Helm**.
 
-- **Mentoring**: Helped mentor the FAE team on Linux, Docker, Kubernetes(K9s) and Windows. Additionally, provided on-site and remote operation support.
+- **Mentoring**: Helped mentor the FAE team on Linux, Docker, Kubernetes and Windows. Additionally, provided on-site and remote operation support.
 
 ## Personal Projects 🧑🏻‍💻
 
