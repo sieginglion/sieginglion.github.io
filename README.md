@@ -1,6 +1,6 @@
 <div style="font-weight: 300;">
 
-# Kun-Chieh (KC) Hsu <span style="vertical-align: middle;">[![](./assets/github.png)](https://github.com/sieginglion/resume)</span> <span style="vertical-align: middle;">[![](./assets/linkedin.png)](https://www.linkedin.com/in/sieginglion/)</span>
+# Kun-Chieh (KC) Hsu <span style="vertical-align: middle;">[![](./assets/github.png)](https://github.com/sieginglion/sieginglion.github.io)</span> <span style="vertical-align: middle;">[![](./assets/linkedin.png)](https://www.linkedin.com/in/sieginglion)</span>
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
 <div>
@@ -45,7 +45,7 @@ The product was an AI pathology system, so most of the production deployments we
 A toy Kubernetes CNI plugin implemented in Bash. "What I cannot create, I do not understand." \
 Stack: **Linux Networking**, **Kubernetes**, **Bash**
 
-### [ipttrace](https://pypi.org/project/ipttrace/)
+### [ipttrace](https://pypi.org/project/ipttrace)
 
 A CLI that helps you trace Iptables rules at ease \
 Stack: **iptables**, **dmesg**, **Python**, **Typer**, **PyPI**
@@ -55,7 +55,7 @@ Stack: **iptables**, **dmesg**, **Python**, **Typer**, **PyPI**
 A VS Code extension that sorts kwargs in a selected Python function call \
 Stack: **JavaScript**, **VS Code API**
 
-### [stock-sense.info](https://stock-sense.info/)
+### [stock-sense.info](https://stock-sense.info)
 
 A website that visualizes historical income statements as animated Sankey diagrams along with corresponding P/E ratio bands. \
 Stack: **Python**, **Plotly**, **Plotly Dash**, **Pandas**, **SEC API**, **Docker**, **GitHub Actions**, **Azure Container Apps**, **Namecheap**, **CloudFlare**
