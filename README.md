@@ -7,12 +7,12 @@
 
 ## Experience ✨
 
-- 9/14 National Tsing Hua University, Taiwan: materials science major, CS minor
-- 7/17 ~ 8/19 (**2.2Y**) HIGH5.ai: **ML and Full Stack Developer** (founding team) \
+- Sep 14, National Tsing Hua University: major in materials science, minor in computer science
+- Jul 17 – Aug 19 (**2.2Y**), HIGH5.ai: **ML and Full Stack Engineer** (founding team) \
   Designed a system enabling customers to retrain their own sentence classification models upon request. Later, took on the responsibility of maintaining both the frontend and backend codebases. \
   Stack: **NumPy**, **scikit-learn**, **PyTorch**, **Optuna**, **NLP**, **NetworkX**, **aiohttp**, **Angular**, **Node.js**, **Elasticsearch**, **RabbitMQ**, **Docker**, **BitBucket Pipelines**, **Kubernetes**, **GCP**
-- 6/20 ~ 6/23 (**3Y**) aetherAI: **Sr. DevOps** (the only DevOps)
-- 7/23 ~ 12/23: doing projects, traveling, playing GarageBand, working out
+- Jun 20 – Jun 23 (**3.1Y**), aetherAI: **Senior DevOps Engineer** (the only)
+- Jul 23 – Dec 23: doing projects, traveling, playing GarageBand, working out
 
 </div>
 <img src="./assets/sieginglion.jpeg" height=200></img>
