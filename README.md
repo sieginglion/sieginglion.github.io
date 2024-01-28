@@ -1,54 +1,45 @@
 <div style="font-weight: 300;">
 
-# Kun-Chieh (KC) Hsu <span style="vertical-align: middle;">[![](./assets/github.png)](https://github.com/sieginglion/sieginglion.github.io)</span> <span style="vertical-align: middle;">[![](./assets/linkedin.png)](https://www.linkedin.com/in/sieginglion)</span>
-
-<div style="display: flex; justify-content: space-between; align-items: center;">
-<div>
+# Kun-Chieh Hsu <span style="vertical-align: middle;">[![](./assets/github.png)](https://github.com/sieginglion/sieginglion.github.io)</span> <span style="vertical-align: middle;">[![](./assets/linkedin.png)](https://www.linkedin.com/in/sieginglion)</span>
 
 ## Experience ✨
 
-- Sep 14, National Tsing Hua University: major in materials science, minor in computer science
 - Jul 17 – Aug 19 (**2.2Y**), HIGH5.ai: **ML and Full Stack Engineer** (founding team) \
-  Designed a system enabling customers to retrain their own sentence classification models upon request. Later, took on the responsibility of maintaining both the frontend and backend codebases. \
-  Stack: **NumPy**, **scikit-learn**, **PyTorch**, **Optuna**, **NLP**, **NetworkX**, **aiohttp**, **Angular**, **Node.js**, **Elasticsearch**, **RabbitMQ**, **Docker**, **BitBucket Pipelines**, **Kubernetes**, **GCP**
-- Jun 20 – Jun 23 (**3.1Y**), aetherAI: **Senior DevOps Engineer** (the only)
-- Jul 23 – Dec 23: doing projects, traveling, playing GarageBand, working out
+  We built a platform to help businesses create their own AI chatbots. As the development process stabilized, we began adopting DevOps practices. \
+  Stack: **NLP**, **NumPy**, **PyTorch**, **scikit-learn**, **Angular**, **Elasticsearch**, **Node.js**,
+  **RabbitMQ**, **Redis**, **BitBucket Pipelines**, **Docker**, **GCP**, **Kubernetes**
 
-</div>
-<img src="./assets/sieginglion.jpeg" height=200></img>
-</div>
+- Jun 20 – Jun 23 (**3.1Y**), aetherAI: **Senior DevOps Engineer** (sole) \
+  We built an AI pathology system to help pathologists manage hundreds of thousands of digital slides and speed up the diagnoses with AI. As the sole DevOps, I had great autonomy in choosing solutions, but also needed to be accountable for potential costs.
 
 ## Missions in aetherAI 🎯
 
-The product was an AI pathology system, so most of the production deployments were done offline in hospitals.
+- **Kubernetes**: The advocate within the company. Migrated the system from **Docker** to Kubernetes by integrating a range of open-source solutions, including **Elastic Stack**, **Helm**, **Longhorn**, **MetalLB**, **MicroK8s** and **Patroni** (**high-availablility PostgreSQL**).
 
-- **Kubernetes**: Migrated the product from **Docker** to Kubernetes by integrating a range of open-source solutions, including **Helm**, **MicroK8s**, **MetalLB** (bare metal load-balancer), **Longhorn** (distributed block storage), **Patroni** (**highly available PostgreSQL**), **SMB CSI Driver**, **Elastic Stack**.
+- **Monitoring**: Designed a remote monitoring solution for hospitals with restricted network access. **Docker SDK**, **Kubernetes API**, **Elasticsearch**, **ElastAlert** and **Grafana** were used. Introduced **Sentry** for system **observability** and **Prometheus** for internal server monitoring.
 
-- **AWS**: Managing **EC2**, **RDS**, **ELB**, **EFS**, **S3** and **Storage Gateway** with console and **Terraform**. Found a solution to mount an **S3 bucket** as a **file system** with Storage Gateway.
+- **CI/CD**: Responsible for optimizing all **Dockerfile**s and **GitLab CI/CD** pipelines, managing internal GitLab Runners and **Harbor**. Introduced **ArgoCD** for **GitOps**, **SonarQube** for **static code analysis** and **Vault** for **secrets management**.
 
-- **Backend**: Designed a **network topology** not only compatible with 3 different product architectures: single node, dual node, and Kubernetes, but also secure for cross-node communication. **Nginx**, **Caddy** and **mTLS** were heavily used. Developed a load testing tool with **Golang**.
+- **Windows**: Ported a Python server to Windows and designed a solution to make it **highly available** and secure. **Caddy**, **mTLS**, **Nginx** and **PowerShell** were used. Developed a toolset based on **Ansible Playbooks** for FAEs to install and control the service.
 
-- **Monitoring**: Designed a remote monitoring solution for hospitals that only allowed outflow **SMTP** traffic. This included a **Python** sidecar, built upon **Docker SDK** and **Kubernetes API**, for periodically emailing metrics. An internal CI would fetch, process and store them in **Elasticsearch**. **Grafana** for visualization. **ElastAlert** for Slack alerting. **Sentry** for on-site monitoring.
+- **AWS**: Managed **EC2**, **EFS**, **ELB**, **RDS**, **S3** and **Storage Gateway** with **Terraform**. Found a solution to mount an S3 bucket as a file system with Storage Gateway.
 
-- **CI/CD**: Responsible for optimizing all **Dockerfile**s and **GitLab CI** pipelines, managing on-premises **GitLab Runner**s and **Harbor** (**container registry**). Integrated **Earthly**, **Trivy** and **ArgoCD** into the CI. Identified the problem and designed a pipeline to create unique offline deployables for each customer, using ClickUp as the single source of truth. **Bash** and **Python** were heavily used.
+## Education 🎓
 
-- **Windows**: Ported a Python server to Windows and designed a solution to make it **highly available** and secure. **PowerShell**, **Nginx**, **Caddy** and **mTLS** were heavily used. Developed a toolset based on **Ansible Playbooks** for FAEs to install, update and control it from Linux.
-
-- **Environment Parity**: Identified the problem and designed a unified toolset for developers to bring up their own development environments independently and for field application engineers (FAEs) to deploy various production environments effortlessly. It had to be compatible with both **Docker Compose** and **Helm**.
-
-- **Mentoring**: Helped mentor the FAE team on Linux, Docker, Kubernetes and Windows. Additionally, provided on-site and remote operation support.
+Sep 14 – Jan 20, National Tsing Hua University: materials science major, computer science minor \
+Intentionally delayed the graduation to avoid having the career interrupted by the military service.
 
 ## Personal Projects 🧑🏻‍💻
 
 ### [bash-cni](https://github.com/sieginglion/bash-cni)
 
 A toy Kubernetes CNI plugin implemented in Bash. "What I cannot create, I do not understand." \
-Stack: **Linux Networking**, **Kubernetes**, **Bash**
+Stack: **Bash**, **Kubernetes**, **Linux Networking**
 
 ### [ipttrace](https://pypi.org/project/ipttrace)
 
 A CLI that helps you trace Iptables rules at ease \
-Stack: **iptables**, **dmesg**, **Python**, **Typer**, **PyPI**
+Stack: **iptables**, **Python**, **Typer**, **PyPI**
 
 ### [kwarg-sort](https://marketplace.visualstudio.com/items?itemName=sieginglion.kwarg-sort)
 
@@ -58,12 +49,12 @@ Stack: **JavaScript**, **VS Code API**
 ### [stock-sense.info](https://stock-sense.info)
 
 A website that visualizes historical income statements as animated Sankey diagrams along with corresponding P/E ratio bands. \
-Stack: **Python**, **Plotly**, **Plotly Dash**, **Pandas**, **SEC API**, **Docker**, **GitHub Actions**, **Azure Container Apps**, **Namecheap**, **CloudFlare**
+Stack: **Azure Container Apps**, **Cloudflare**, **Docker**, **GitHub Actions**, **Namecheap**, **Pandas**, **Plotly Dash**, **Plotly**, **Python**
 
 ### [portman](https://github.com/sieginglion/portman)
 
 My own portfolio management server which is capable of fetching historical prices for US and Taiwan stocks, as well as cryptos. Based on that, it can then calculate downside risk and conduct MACD parameter optimization for each position. The trading signals are presented through a Streamlit app. \
-Stack: **Numba**, **Python**, **FastAPI**, **NumPy**, **Streamlit**
+Stack: **FastAPI**, **Numba**, **NumPy**, **Plotly**, **Python**, **Streamlit**
 
 ### [My Dune Dashboard](https://dune.com/sieginglion/gmx)
 

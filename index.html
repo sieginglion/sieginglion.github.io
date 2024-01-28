@@ -366,65 +366,57 @@ code {
     });
   </script>
 <div style="font-weight: 300;">
-<h1 id="kun-chieh-kc-hsu-span-style%22vertical-align-middle%22span-span-style%22vertical-align-middle%22span">Kun-Chieh (KC) Hsu <span style="vertical-align: middle;"><a href="https://github.com/sieginglion/sieginglion.github.io"><img src="./assets/github.png" alt=""></a></span> <span style="vertical-align: middle;"><a href="https://www.linkedin.com/in/sieginglion"><img src="./assets/linkedin.png" alt=""></a></span></h1>
-<div style="display: flex; justify-content: space-between; align-items: center;">
-<div>
+<h1 id="kun-chieh-hsu-span-style%22vertical-align-middle%22span-span-style%22vertical-align-middle%22span">Kun-Chieh Hsu <span style="vertical-align: middle;"><a href="https://github.com/sieginglion/sieginglion.github.io"><img src="./assets/github.png" alt=""></a></span> <span style="vertical-align: middle;"><a href="https://www.linkedin.com/in/sieginglion"><img src="./assets/linkedin.png" alt=""></a></span></h1>
 <h2 id="experience-%E2%9C%A8">Experience ✨</h2>
 <ul>
-<li>Sep 14, National Tsing Hua University: major in materials science, minor in computer science</li>
-<li>Jul 17 – Aug 19 (<strong>2.2Y</strong>), HIGH5.ai: <strong>ML and Full Stack Engineer</strong> (founding team) <br>
-Designed a system enabling customers to retrain their own sentence classification models upon request. Later, took on the responsibility of maintaining both the frontend and backend codebases. <br>
-Stack: <strong>NumPy</strong>, <strong>scikit-learn</strong>, <strong>PyTorch</strong>, <strong>Optuna</strong>, <strong>NLP</strong>, <strong>NetworkX</strong>, <strong>aiohttp</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, <strong>Elasticsearch</strong>, <strong>RabbitMQ</strong>, <strong>Docker</strong>, <strong>BitBucket Pipelines</strong>, <strong>Kubernetes</strong>, <strong>GCP</strong></li>
-<li>Jun 20 – Jun 23 (<strong>3.1Y</strong>), aetherAI: <strong>Senior DevOps Engineer</strong> (the only)</li>
-<li>Jul 23 – Dec 23: doing projects, traveling, playing GarageBand, working out</li>
+<li>
+<p>Jul 17 – Aug 19 (<strong>2.2Y</strong>), HIGH5.ai: <strong>ML and Full Stack Engineer</strong> (founding team) <br>
+We built a platform to help businesses create their own AI chatbots. As the development process stabilized, we began adopting DevOps practices. <br>
+Stack: <strong>NLP</strong>, <strong>NumPy</strong>, <strong>PyTorch</strong>, <strong>scikit-learn</strong>, <strong>Angular</strong>, <strong>Elasticsearch</strong>, <strong>Node.js</strong>,
+<strong>RabbitMQ</strong>, <strong>Redis</strong>, <strong>BitBucket Pipelines</strong>, <strong>Docker</strong>, <strong>GCP</strong>, <strong>Kubernetes</strong></p>
+</li>
+<li>
+<p>Jun 20 – Jun 23 (<strong>3.1Y</strong>), aetherAI: <strong>Senior DevOps Engineer</strong> (sole) <br>
+We built an AI pathology system to help pathologists manage hundreds of thousands of digital slides and speed up the diagnoses with AI. As the sole DevOps, I had great autonomy in choosing solutions, but also needed to be accountable for potential costs.</p>
+</li>
 </ul>
-</div>
-<img src="./assets/sieginglion.jpeg" height=200></img>
-</div>
 <h2 id="missions-in-aetherai-%F0%9F%8E%AF">Missions in aetherAI 🎯</h2>
-<p>The product was an AI pathology system, so most of the production deployments were done offline in hospitals.</p>
 <ul>
 <li>
-<p><strong>Kubernetes</strong>: Migrated the product from <strong>Docker</strong> to Kubernetes by integrating a range of open-source solutions, including <strong>Helm</strong>, <strong>MicroK8s</strong>, <strong>MetalLB</strong> (bare metal load-balancer), <strong>Longhorn</strong> (distributed block storage), <strong>Patroni</strong> (<strong>highly available PostgreSQL</strong>), <strong>SMB CSI Driver</strong>, <strong>Elastic Stack</strong>.</p>
+<p><strong>Kubernetes</strong>: The advocate within the company. Migrated the system from <strong>Docker</strong> to Kubernetes by integrating a range of open-source solutions, including <strong>Elastic Stack</strong>, <strong>Helm</strong>, <strong>Longhorn</strong>, <strong>MetalLB</strong>, <strong>MicroK8s</strong> and <strong>Patroni</strong> (<strong>high-availablility PostgreSQL</strong>).</p>
 </li>
 <li>
-<p><strong>AWS</strong>: Managing <strong>EC2</strong>, <strong>RDS</strong>, <strong>ELB</strong>, <strong>EFS</strong>, <strong>S3</strong> and <strong>Storage Gateway</strong> with console and <strong>Terraform</strong>. Found a solution to mount an <strong>S3 bucket</strong> as a <strong>file system</strong> with Storage Gateway.</p>
+<p><strong>Monitoring</strong>: Designed a remote monitoring solution for hospitals with restricted network access. <strong>Docker SDK</strong>, <strong>Kubernetes API</strong>, <strong>Elasticsearch</strong>, <strong>ElastAlert</strong> and <strong>Grafana</strong> were used. Introduced <strong>Sentry</strong> for system <strong>observability</strong> and <strong>Prometheus</strong> for internal server monitoring.</p>
 </li>
 <li>
-<p><strong>Backend</strong>: Designed a <strong>network topology</strong> not only compatible with 3 different product architectures: single node, dual node, and Kubernetes, but also secure for cross-node communication. <strong>Nginx</strong>, <strong>Caddy</strong> and <strong>mTLS</strong> were heavily used. Developed a load testing tool with <strong>Golang</strong>.</p>
+<p><strong>CI/CD</strong>: Responsible for optimizing all <strong>Dockerfile</strong>s and <strong>GitLab CI/CD</strong> pipelines, managing internal GitLab Runners and <strong>Harbor</strong>. Introduced <strong>ArgoCD</strong> for <strong>GitOps</strong>, <strong>SonarQube</strong> for <strong>static code analysis</strong> and <strong>Vault</strong> for <strong>secrets management</strong>.</p>
 </li>
 <li>
-<p><strong>Monitoring</strong>: Designed a remote monitoring solution for hospitals that only allowed outflow <strong>SMTP</strong> traffic. This included a <strong>Python</strong> sidecar, built upon <strong>Docker SDK</strong> and <strong>Kubernetes API</strong>, for periodically emailing metrics. An internal CI would fetch, process and store them in <strong>Elasticsearch</strong>. <strong>Grafana</strong> for visualization. <strong>ElastAlert</strong> for Slack alerting. <strong>Sentry</strong> for on-site monitoring.</p>
+<p><strong>Windows</strong>: Ported a Python server to Windows and designed a solution to make it <strong>highly available</strong> and secure. <strong>Caddy</strong>, <strong>mTLS</strong>, <strong>Nginx</strong> and <strong>PowerShell</strong> were used. Developed a toolset based on <strong>Ansible Playbooks</strong> for FAEs to install and control the service.</p>
 </li>
 <li>
-<p><strong>CI/CD</strong>: Responsible for optimizing all <strong>Dockerfile</strong>s and <strong>GitLab CI</strong> pipelines, managing on-premises <strong>GitLab Runner</strong>s and <strong>Harbor</strong> (<strong>container registry</strong>). Integrated <strong>Earthly</strong>, <strong>Trivy</strong> and <strong>ArgoCD</strong> into the CI. Identified the problem and designed a pipeline to create unique offline deployables for each customer, using ClickUp as the single source of truth. <strong>Bash</strong> and <strong>Python</strong> were heavily used.</p>
-</li>
-<li>
-<p><strong>Windows</strong>: Ported a Python server to Windows and designed a solution to make it <strong>highly available</strong> and secure. <strong>PowerShell</strong>, <strong>Nginx</strong>, <strong>Caddy</strong> and <strong>mTLS</strong> were heavily used. Developed a toolset based on <strong>Ansible Playbooks</strong> for FAEs to install, update and control it from Linux.</p>
-</li>
-<li>
-<p><strong>Environment Parity</strong>: Identified the problem and designed a unified toolset for developers to bring up their own development environments independently and for field application engineers (FAEs) to deploy various production environments effortlessly. It had to be compatible with both <strong>Docker Compose</strong> and <strong>Helm</strong>.</p>
-</li>
-<li>
-<p><strong>Mentoring</strong>: Helped mentor the FAE team on Linux, Docker, Kubernetes and Windows. Additionally, provided on-site and remote operation support.</p>
+<p><strong>AWS</strong>: Managed <strong>EC2</strong>, <strong>EFS</strong>, <strong>ELB</strong>, <strong>RDS</strong>, <strong>S3</strong> and <strong>Storage Gateway</strong> with <strong>Terraform</strong>. Found a solution to mount an S3 bucket as a file system with Storage Gateway.</p>
 </li>
 </ul>
+<h2 id="education-%F0%9F%8E%93">Education 🎓</h2>
+<p>Sep 14 – Jan 20, National Tsing Hua University: materials science major, computer science minor <br>
+Intentionally delayed the graduation to avoid having the career interrupted by the military service.</p>
 <h2 id="personal-projects-%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB">Personal Projects 🧑🏻‍💻</h2>
 <h3 id="bash-cni"><a href="https://github.com/sieginglion/bash-cni">bash-cni</a></h3>
 <p>A toy Kubernetes CNI plugin implemented in Bash. &quot;What I cannot create, I do not understand.&quot; <br>
-Stack: <strong>Linux Networking</strong>, <strong>Kubernetes</strong>, <strong>Bash</strong></p>
+Stack: <strong>Bash</strong>, <strong>Kubernetes</strong>, <strong>Linux Networking</strong></p>
 <h3 id="ipttrace"><a href="https://pypi.org/project/ipttrace">ipttrace</a></h3>
 <p>A CLI that helps you trace Iptables rules at ease <br>
-Stack: <strong>iptables</strong>, <strong>dmesg</strong>, <strong>Python</strong>, <strong>Typer</strong>, <strong>PyPI</strong></p>
+Stack: <strong>iptables</strong>, <strong>Python</strong>, <strong>Typer</strong>, <strong>PyPI</strong></p>
 <h3 id="kwarg-sort"><a href="https://marketplace.visualstudio.com/items?itemName=sieginglion.kwarg-sort">kwarg-sort</a></h3>
 <p>A VS Code extension that sorts kwargs in a selected Python function call <br>
 Stack: <strong>JavaScript</strong>, <strong>VS Code API</strong></p>
 <h3 id="stock-senseinfo"><a href="https://stock-sense.info">stock-sense.info</a></h3>
 <p>A website that visualizes historical income statements as animated Sankey diagrams along with corresponding P/E ratio bands. <br>
-Stack: <strong>Python</strong>, <strong>Plotly</strong>, <strong>Plotly Dash</strong>, <strong>Pandas</strong>, <strong>SEC API</strong>, <strong>Docker</strong>, <strong>GitHub Actions</strong>, <strong>Azure Container Apps</strong>, <strong>Namecheap</strong>, <strong>CloudFlare</strong></p>
+Stack: <strong>Azure Container Apps</strong>, <strong>Cloudflare</strong>, <strong>Docker</strong>, <strong>GitHub Actions</strong>, <strong>Namecheap</strong>, <strong>Pandas</strong>, <strong>Plotly Dash</strong>, <strong>Plotly</strong>, <strong>Python</strong></p>
 <h3 id="portman"><a href="https://github.com/sieginglion/portman">portman</a></h3>
 <p>My own portfolio management server which is capable of fetching historical prices for US and Taiwan stocks, as well as cryptos. Based on that, it can then calculate downside risk and conduct MACD parameter optimization for each position. The trading signals are presented through a Streamlit app. <br>
-Stack: <strong>Numba</strong>, <strong>Python</strong>, <strong>FastAPI</strong>, <strong>NumPy</strong>, <strong>Streamlit</strong></p>
+Stack: <strong>FastAPI</strong>, <strong>Numba</strong>, <strong>NumPy</strong>, <strong>Plotly</strong>, <strong>Python</strong>, <strong>Streamlit</strong></p>
 <h3 id="my-dune-dashboard"><a href="https://dune.com/sieginglion/gmx">My Dune Dashboard</a></h3>
 <p>Wrote complex queries to do token distribution analysis on Dune. <br>
 Stack: <strong>SQL</strong></p>
