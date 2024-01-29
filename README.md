@@ -6,14 +6,14 @@
 
 - Jul 2017 – Aug 2019 (**2.2Y**), HIGH5.ai: **ML and Full Stack Engineer** (founding team)
   > We built a platform to help businesses create their own AI chatbots. As the development process stabilized, we began adopting DevOps practices. \
-  Stack: **Python**, **NumPy**, **PyTorch**, **Angular**, **Node.js**, **Elasticsearch**, **RabbitMQ**, **Redis**, **BitBucket Pipelines**, **Docker**, **GCP**, **Kubernetes**
+  Stack: **NumPy**, **PyTorch**, **Angular**, **Express.js**, **Elasticsearch**, **RabbitMQ**, **Redis**, **BitBucket Pipelines**, **Docker**, **GCP**, **Kubernetes**
 
 - Jun 2020 – Now, aetherAI: **Senior DevOps Engineer** (sole)
-  > We built an AI pathology system to help pathologists manage hundreds of thousands of digital slides and speed up the diagnoses with AI. As the sole DevOps, I had great autonomy in choosing solutions, but also needed to be accountable for potential costs.
+  > We built an AI pathology system to help pathologists manage hundreds of thousands of digital slides and speed up the diagnoses with AI. As the sole DevOps, I had great autonomy in choosing solutions, but also needed to be accountable for potential drawbacks.
 
 ## Missions in aetherAI 🎯
 
-- **Kubernetes**: The advocate within the company. Migrated the system to Kubernetes by integrating **Elastic Stack**, **Helm**, **Longhorn**, **MetalLB** and **Patroni** (**HA PostgreSQL**). Developed a unified toolset to spin up a **Docker** or Kubernetes based environment easily.
+- **Kubernetes**: The advocate within the company. Migrated the system to Kubernetes by integrating **Elastic Stack**, **Helm**, **Longhorn**, **MetalLB**, **Patroni** (**HA PostgreSQL**) and **SMB CSI Driver**. Developed a unified toolset to spin up a **Docker** or Kubernetes based environment easily.
 
 - **Monitoring**: Designed a remote monitoring solution for hospitals with restricted network access. **Kubernetes API**, **Elasticsearch**, **ElastAlert** and **Grafana** were used. Introduced **Sentry** for **observability** and **Prometheus** for internal server monitoring.
 
@@ -21,7 +21,7 @@
 
 - **Windows**: Ported a Python server to Windows and designed a solution to make it **HA** and secure. **Caddy**, **Nginx**, **OpenSSL** and **PowerShell** were used. Developed a toolset based on **Ansible Playbooks** to install and control the service.
 
-- **AWS**: Managed **EC2**, **EFS**, **ELB**, **RDS**, **S3** and **Storage Gateway** with **Terraform**. Found a solution to mount an S3 bucket as a file system with Storage Gateway.
+- **AWS**: Managed **EC2**, **EFS**, **RDS**, **S3**, **Storage Gateway** and **VPC** with **Terraform**. Found a solution to mount an S3 bucket as a file system with Storage Gateway.
 
 ## Education 🎓
 
