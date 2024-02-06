@@ -4,12 +4,12 @@
 
 ## Experience ✨
 
+- Jun 2020 – Jun 2023 (**3.1Y**), aetherAI: **Senior DevOps Engineer** (sole)
+  > We built an AI pathology system to help pathologists manage hundreds of thousands of digital slides and speed up the diagnoses with AI. As the sole DevOps, I had great autonomy in choosing solutions, but also needed to be accountable for potential drawbacks.
+
 - Jul 2017 – Aug 2019 (**2.2Y**), HIGH5.ai: **ML and Full Stack Engineer** (founding team)
   > We built a platform to help businesses create their own AI chatbots. As the development process stabilized, we began adopting DevOps practices. \
   Stack: **NumPy**, **PyTorch**, **Angular**, **Express.js**, **Elasticsearch**, **RabbitMQ**, **Redis**, **BitBucket Pipelines**, **Docker**, **GCP**, **Kubernetes**
-
-- Jun 2020 – Jun 2023 (**3.1Y**), aetherAI: **Senior DevOps Engineer** (sole)
-  > We built an AI pathology system to help pathologists manage hundreds of thousands of digital slides and speed up the diagnoses with AI. As the sole DevOps, I had great autonomy in choosing solutions, but also needed to be accountable for potential drawbacks.
 
 ## Missions in aetherAI 🎯
 
